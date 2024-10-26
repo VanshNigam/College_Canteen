@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini project</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Poppins:wght@400;700&family=Ubuntu:wght@300&display=swap');
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            background: #001a43;
+            font-family: 'Poppins', sans-serif;
+            position: fixed;
+        }
+
+        nav {
+            display: flex;
+            z-index: 1;
+        }
+
+        .logo {
+            display: flex;
+            padding: 0 27px;
+        }
+
+        nav ul {
+            height: 59px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin: 13px;
+        }
+
+        nav ul li {
+            list-style: none;
+            padding: 0 27px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            font-weight: bolder;
+        }
+
+        .search {
+            display: flex;
+            align-items: center;
+        }
+
+        .search input {
+            width: 220px;
+            height: 23px;
+            margin: 0 25px 0 240px;
+            border-radius: 3px;
+            padding: 0 12px;
+        }
+
+        .btn {
+            padding: 5px 7px;
+            margin-left: 4px;
+            margin-right: 15px;
+            color: white;
+            background-color: #0c306a;
+            border: 1px solid white;
+            border-radius: 7px;
+            cursor: pointer;
+
+        }
+
+        .btn:hover {
+            padding: 6px 8px;
+            margin-left: 4px;
+            margin-right:15px;
+            /* color: rgb(31, 0, 183); */
+            background-color: #0e3677;
+            border: 2px solid white;
+            border-radius: 7px;
+            cursor: pointer;
+
+        }
+
+        .b {
+            padding: 28px 25px 30px 10px;
+            /* border-radius: 8px; */
+        }
+
+        .b:hover {
+            font-weight: bolder;
+            height: 41px;
+            width: 78px;
+
+        }
+
+        footer {
+            font-family: 'Poppins', sans-serif;
+            height: 12vh;
+            background-color: #0c306a;
+            color: white;
+            align-items: center;
+        }
+
+        .flex-all-center {
+            /* margin-top: 30px; */
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .main {
+            display: flex;
+        }
+
+        .container1 {
+            width: 600px;
+            height: 500px;
+            /* border: 2px solid black; */
+            margin-left: 140px;
+            margin-top: 260px;
+            font-size: 3vw;
+            color: #00183e;
+
+
+        }
+
+        .container2 {
+            width: 500px;
+            height: 313px;
+            border: 7px solid rgb(180, 179, 179);
+            margin-left: 100px;
+            border-radius: 17px;
+            margin-top: 260px;
+            justify-items: center;
+            align-items: center;
+        }
+
+        #element {
+            font-size: 2.8vw;
+            color: #002869;
+        }
+
+        .v {
+            font-size: 2vw;
+        }
+
+        .first {
+            font-family: sans-serif;
+        }
+
+        .menu {
+            margin-left: 140px;
+            margin-bottom: 42px;
+            width: 300px;
+
+
+
+        }
+
+        .menu:hover {
+            cursor: pointer;
+            width: 315px;
+            border: 5px solid rgb(149, 147, 147);
+            border-radius: 12px;
+        }
+
+        .menu1 {
+            /* margin-left: 70px; */
+            /* margin-top: 20px; */
+            margin-bottom: 40px;
+            width: 300px;
+
+        }
+
+        .menu1:hover {
+            cursor: pointer;
+            width: 315px;
+            border: 5px solid rgb(150, 150, 150);
+            border-radius: 12px;
+
+        }
+
+        .contact-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container3 {
+            /* margin-left: 9rem; */
+            height: 700px;
+            /* width: 1100px; */
+            /* background-color: red; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .contact-box {
+            height: 400px;
+            width: 800px;
+            /* background-color: aqua; */
+            margin-left: 2rem;
+            text-align: center;
+        }
+
+        .contact-form input {
+            padding: 1rem;
+            height: 3rem;
+            width: 27rem;
+            margin-top: 1rem;
+            border: none;
+            border-bottom: 1px solid #979797;
+        }
+
+        .contact-form input::placeholder {
+            font-size: 1rem;
+        }
+
+        .contact-form textarea {
+            padding: 1rem;
+            font-size: 1rem;
+            height: 6rem;
+            width: 27rem;
+            margin-top: 1rem;
+            border: none;
+            border-bottom: 1px solid #979797;
+        }
+
+        .contact-form {
+            margin-top: 2rem;
+        }
+
+        .btn-form {
+            margin-right: 14rem;
+            padding: 0.65rem 1rem;
+            font-size: 0.85rem;
+            margin-top: 0.85rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo" >
+                <img src="images\logo.png" width=88px>
+            </div>
+            <ul>
+
+                <li><a href="#home">Home</a></li>
+                <!-- <li><a href="#">About</a></li> -->
+                <li><a href="#first">Menu</a></li>
+                <li> <a href="Order.html">Order</a></li>
+                <li> <a href="#contact-section">Suggestions</a></li>
+            </ul>
+            <div class="search">
+                <input type="text" placeholder="Search here" value="Search for More">
+                <button class="btn"><img src="images\search.png" width=28px></button>
+            </div>
+            <a href="#">
+                <img src="./images/cart (1).png" width="75" height="40" class="b">
+            </a>
+            <a href="#">
+                <img src="./images/cart (2).png" width="75" height="40" class="b">
+            </a>
+        </nav>
+
+    </header>
+    <main style="background: url(./images/college1.png); width:100vw;height:100vh;background-repeat:no-repeat;background-position: center;
+        background-size: cover ;">
+        <div class="main"id="home">
+            <!-- < !-- to call typed js -->
+            <!-- <span id="element"> </span> -->
+            <container class="container1">
+                <b>Welcome to Allenhouse Canteen<br> </b><span class="v">Best Offers For You</span><br>
+                <span id="element">var typed </span>
+            </container>
+
+            <container class="container2">
+                <img src="./images/collegecanteen.jpg" width="500px" alt="" srcset="">
+            </container>
+
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['What do you Want ?', 'Pav Bhaji', 'Burger', 'Pizza', 'Paratha', 'Coffee', 'Tea'],
+            typeSpeed: 60,
+        });
+    </script>
+    <br><br><br><br><br><br>
+    <div class="first" id="first">
+        <center>
+            <br><br>       <br><br>   <br><br>       <br>
+            <h1>Menu</h1>
+            <h3>What's in your mind ?</h3>
+            <section class="flex">
+                <br><br>
+                <img src="./images/1st.png" alt="" class="menu1" srcset="">
+                <img src="./images/2nd.png" alt="" class="menu" srcset=""><br>
+                <img src="./images/3rd.png" alt="" class="menu1" srcset="">
+                <img src="./images/4th.png" alt="" class="menu" srcset="">
+                <br>
+                <a href="#">
+                    <h3>and many more...</h3>
+                </a>
+
+            </section>
+        </center>
+    </div>
+    <div class="contact-section" id="contact-section">
+        <!-- <center> -->
+            <div class="container3">
+                <div class="contact-box">
+                    <div class="skill">
+                        <h2>Send a Message</h2>
+                    </div>
+
+                    <div class="contact-form">
+                        <input type="text" placeholder="Your Name"> <br>
+                        <input type="email" placeholder="Your Email"> <br>
+                        <input type="text" placeholder="Subject"> <br>
+                        <textarea cols="30" rows="10" placeholder="Send Message"></textarea>
+                        <button class="btn btn-form">Send Message</button>
+                    </div>
+                </div>
+            </div>
+        </center>
+    </div>
+
+
+<br><br><br><br>
+    <footer class="flex-all-center">
+        <p> Copycart &copy;:Allenhouse505.com</p>
+    </footer>
+
+
+
+</body>
+
+</html>
